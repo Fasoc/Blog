@@ -24,14 +24,21 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    text-align: right;
 }
 
 nav ul li {
+    margin-left: 0px;
     margin: 0 15px;
 }
 
 nav select {
     margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #796b6b; 
 }
 
 #postsContainer {
@@ -50,20 +57,39 @@ nav select {
     width: 300px; 
     text-align: center; 
     cursor: pointer;
-    background-color: aqua; /* Muda o cursor para indicar que é clicável */
+    background-color: aqua; 
     box-shadow: 0 2px 5px #000;
 }
 
 .card img {
-    max-width: 100%; /* A imagem não deve ultrapassar a largura do card */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 300px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .card h2 {
-    font-size: 20px; /* Tamanho do título */
+    font-size: 30px;
 }
 
 .card p {
-    color: gray; /* Cor do texto secundário */
+    color: #000; 
     margin: 5px 0;
+    text-align: center;
+}
+
+.back-link {
+    display: block; 
+    margin-top: 20px; 
+    font-size: 15px; 
+    color: blue; 
+    text-decoration-line: none; 
+}
+
+.header-title {
+    flex-grow: 1; 
+    text-align: center; 
+    margin-left: 0px;
+    color: white;
+    text-decoration: none;
 }
