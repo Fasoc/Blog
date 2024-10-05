@@ -2,20 +2,34 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" contente="width=device-width, inicial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="pagina.css">
-    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina.css">
+    <link rel="shortcut icon" href="Imagem/OIP.jfif" type="Imagem/x-icon">
+    <title>Blog de Tecnologia</title>
 </head>
 <body>
-    
-            <table id="historyTable">
+    <header>
+        <h1>Blog de Tecnologia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <select id="categoryFilter">
+                <option value="all">Todas as Categorias</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="ciência">Ciência</option>
+                <option value="inovação">Inovação</option>
+                <option value="programação">Programação</option>
+            </select>
+        </nav>
+    </header>
 
-                <tbody>
-                    
-                </tbody>
-            </table>
-        </div>
-    </div>
+    <main id="postsContainer">
+        <!-- Os cards de post serão gerados aqui via JavaScript -->
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>

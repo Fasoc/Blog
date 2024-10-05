@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #23227e;
+    color: #faf8f8;
+    padding: 10px;
+    text-align:center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav select {
+    margin-left: 20px;
+}
+
+#postsContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 10px;
+    background-color: #007BFF;
+}
+
+.card {
+    border: 1px solid #000; 
+    border-radius: 25px; 
+    margin: 20px;
+    padding: 15px; 
+    width: 300px; 
+    text-align: center; 
+    cursor: pointer;
+    background-color: aqua; /* Muda o cursor para indicar que é clicável */
+    box-shadow: 0 2px 5px #000;
+}
+
+.card img {
+    max-width: 100%; /* A imagem não deve ultrapassar a largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.card h2 {
+    font-size: 20px; /* Tamanho do título */
+}
+
+.card p {
+    color: gray; /* Cor do texto secundário */
+    margin: 5px 0;
+}
