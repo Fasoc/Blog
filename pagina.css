@@ -28,7 +28,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 0px;
+    margin-right: 20px;
     margin: 0 15px;
 }
 
@@ -38,7 +38,7 @@ nav select {
 
 nav ul li a {
     text-decoration: none; 
-    color: #796b6b; 
+    color: #fdfcfc;
 }
 
 #postsContainer {
