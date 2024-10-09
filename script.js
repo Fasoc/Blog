@@ -168,8 +168,8 @@ function displayPost() {
         
         document.getElementById('postContent').innerHTML = `
             <h2>${post.title}</h2>
-            <p>${post.date}</p>
-            <p>${post.content}</p>
+            <p>${post.date}</p> 
+            ${post.content.split('\n').map(paragraph => `<p>${paragraph.trim()}</p>`).join('')}
             <p><strong>Categoria:</strong> ${post.category}</p>
             <p><strong>Views:</strong> ${post.views}</p>
         `;
@@ -187,17 +187,3 @@ if (window.location.pathname.endsWith('post.html')) {
 document.getElementById('categoryFilter')?.addEventListener('change', (e) => {
     displayPosts(e.target.value);
 });
-
-function resetViews() {
-    const views = getViewsFromLocalStorage();
-
-    // Define todas as visualizações como 0
-    Object.keys(views).forEach(id => {
-        views[id] = 0;
-    });
-
-    saveViewsToLocalStorage(views);
-    alert("Contador de visualizações reiniciado.");
-    // Atualiza a página para refletir as alterações
-    displayPosts('all');
-}
